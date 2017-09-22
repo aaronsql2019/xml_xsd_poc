@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/22/2017 4:09:52 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="SHISHIRS"
+  DTS:CreatorName="CONTATAN\shishir"
+  DTS:DTSID="{976F80A6-0608-46B1-9FB3-0278006396A4}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.0800.90"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="xmlTask"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{64A546B9-4323-43FE-9A6D-BCD16BD7AC85}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[books.xml]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{0FEE8DA2-D1C4-4563-BC8C-26A8C46F5007}"
+      DTS:ObjectName="books.xml">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="D:\GIT\xml_xsd_poc\books.xml" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[catalog.xsd]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{5ADD4C10-7F29-4FD2-ADC1-318D099B5A09}"
+      DTS:ObjectName="catalog.xsd">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="D:\GIT\xml_xsd_poc\catalog.xsd" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Output]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{2CAFCFA5-F59A-4995-B03C-CF178076965B}"
+      DTS:ObjectName="Output">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="D:\GIT\xml_xsd_poc\Output" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\XML Task"
+      DTS:CreationName="Microsoft.XMLTask"
+      DTS:Description="XML Task"
+      DTS:DTSID="{8D3632B2-51AD-424E-A70C-D36B250B8B4E}"
+      DTS:ExecutableType="Microsoft.XMLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="XML Task"
+      DTS:TaskContact="XML Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <XMLTaskData
+          OperationType="Validate"
+          Source="books.xml"
+          SecondOperandType="FileConnection"
+          SecondOperand="catalog.xsd"
+          SaveOperationResult="True"
+          Destination="Output"
+          OverwriteDestination="True"
+          FailOpOnValidationFail="True"
+          ValidationDetails="True" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="126,42"
+          Id="Package\XML Task"
+          TopLeft="177,117" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

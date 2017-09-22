@@ -2,13 +2,18 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>XML_XSD</Name>
-    <LastWriteTime>2017-09-22T10:20:24.600097Z</LastWriteTime>
+    <LastWriteTime>2017-09-22T12:31:10.4288913Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>Package.dtsx</Name>
-      <LastWriteTime>2017-09-22T10:20:24.497097Z</LastWriteTime>
+      <Name>ImportFromXML.dtsx</Name>
+      <LastWriteTime>2017-09-22T10:21:30.624097Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>xmlTask.dtsx</Name>
+      <LastWriteTime>2017-09-22T12:31:10.0068827Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

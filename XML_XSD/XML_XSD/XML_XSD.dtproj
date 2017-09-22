@@ -26,26 +26,27 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">SHISHIRS</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAASZ9oVoGp/0W42ZgwWblFmAAAAAACAAAAAAADZgAAwAAAABAAAADFRc4CVj5hluOgyuLq9mokAAAAAASAAACgAAAAEAAAAHyhB/HfGaz0vEbtKUi9/AeIAAAAhlvEx+sOmKatO54u6y2KD+uj/0B/WIQWzzm1MdHvUYY8FL+R3U0vfcnf20jl894kF3UddPxf3TqznB89lHxpVi3YA/HrnQHMd+f5ORhpMqUy+sH0r1l86jZopZi+NXm0hls9tT+TCQH5nFXTbmZnXlX6I0SPaMHtJJNViecmzYXrJckYQLXPnBQAAABjikKxezmZrynYga3WZdZrfhoRYw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAASZ9oVoGp/0W42ZgwWblFmAAAAAACAAAAAAADZgAAwAAAABAAAADZeypfz8Adz+Vam+0XyParAAAAAASAAACgAAAAEAAAAG/61FT3vjDGRwyzbyFXzq+IAAAAnrgj1GvW6ylxzASR6Wy/pm/COHNuf6IIDuk1uxLBHk58F/0S67doWLoaaFHYYyEvPa+MmXFNPtBOkNR4Y247FAugCnczzuufxe1WSb363HoWW+r+bI07DD5JnjLkAIMNYp6+KuwQldDSJ0Iefiwky9NBj+bUYlxIL9ZUKjXB1XJ9KU1EAgkRURQAAAAGGEbXF6RZDxEZ1cSTvHNmebbdNA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
-          <SSIS:Package SSIS:Name="Package.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="ImportFromXML.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="xmlTask.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters />
           <SSIS:PackageInfo>
-            <SSIS:PackageMetaData SSIS:Name="Package.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="ImportFromXML.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{74C04115-2911-45C5-A325-DB3654D9C138}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{68981D65-5CCD-4AFE-985F-2239970C6C6C}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">ImportFromXML</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{9E3BB536-4959-4905-AF04-1BA329C3ECC7}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{CF16F96A-513C-485C-90B1-4A5244C0AC4F}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -142,6 +143,69 @@
                 </SSIS:Parameter>
               </SSIS:Parameters>
             </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="xmlTask.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{976F80A6-0608-46B1-9FB3-0278006396A4}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">xmlTask</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{64A546B9-4323-43FE-9A6D-BCD16BD7AC85}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="CM.books.xml.ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\GIT\xml_xsd_poc\books.xml</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.catalog.xsd.ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\GIT\xml_xsd_poc\catalog.xsd</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.Output.ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\GIT\xml_xsd_poc\Output</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+              </SSIS:Parameters>
+            </SSIS:PackageMetaData>
           </SSIS:PackageInfo>
         </SSIS:DeploymentInfo>
       </SSIS:Project>
@@ -159,7 +223,13 @@
         <ConnectionSecurityMappings />
         <DatabaseStorageLocations />
         <TargetServerVersion>SQLServer2017</TargetServerVersion>
-        <ParameterConfigurationValues />
+        <ParameterConfigurationValues>
+          <ConfigurationSetting>
+            <Id>LastModifiedTime</Id>
+            <Name>LastModifiedTime</Name>
+            <Value xsi:type="xsd:dateTime">2017-09-22T10:20:26.681097Z</Value>
+          </ConfigurationSetting>
+        </ParameterConfigurationValues>
       </Options>
     </Configuration>
   </Configurations>

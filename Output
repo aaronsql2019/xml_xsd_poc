@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:ns="http://schemas.microsoft.com/xmltools/2002/xmlvalidation">
+	<metadata>
+		<result>false</result>
+		<errors>1</errors>
+		<warnings>0</warnings>
+		<startTime>2017-09-22T18:03:14.608</startTime>
+		<endTime>2017-09-22T18:03:14.655</endTime>
+		<xmlFile>D:\GIT\xml_xsd_poc\books.xml</xmlFile>
+		<xsdFile>D:\GIT\xml_xsd_poc\catalog.xsd</xsdFile>
+	</metadata>
+	<messages>
+		<error line="22" position="8">The element 'book' has invalid child element 'genre1'. List of possible elements expected: 'genre, price, publish_date, description'.</error>
+	</messages>
+</root>
