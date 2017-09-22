@@ -19,7 +19,7 @@
    <book id="bk103">
       <author>Prateek Nigam </author>
       <title>80 Shades of Grey</title>
-      <genre1>Romance</genre1>
+      <genre>Romance</genre>
       <price>999.99</price>
       <publish_date>2020-10-01</publish_date>
       <description>An in-depth look.</description>
