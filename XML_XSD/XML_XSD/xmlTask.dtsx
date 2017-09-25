@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="xmlTask"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{066A88D3-D26E-4E49-A9E9-E8426462292F}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{6FC067A0-E14B-4397-AB71-076B7F7A71B6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -115,9 +115,9 @@
       <DTS:ObjectData>
         <XMLTaskData
           OperationType="Validate"
-          Source="31_607168.xml"
+          Source="books.xml"
           SecondOperandType="FileConnection"
-          SecondOperand="32_599689.xsd"
+          SecondOperand="catalog.xsd"
           SaveOperationResult="True"
           Destination="Report_Output.xml"
           OverwriteDestination="True"

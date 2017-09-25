@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:ns="http://schemas.microsoft.com/xmltools/2002/xmlvalidation">
+	<metadata>
+		<result>true</result>
+		<errors>0</errors>
+		<warnings>0</warnings>
+		<startTime>2017-09-25T18:58:32.133</startTime>
+		<endTime>2017-09-25T18:58:32.223</endTime>
+		<xmlFile>D:\GIT\xml_xsd_poc\books.xml</xmlFile>
+		<xsdFile>D:\GIT\xml_xsd_poc\catalog.xsd</xsdFile>
+	</metadata>
+	<messages />
+</root>

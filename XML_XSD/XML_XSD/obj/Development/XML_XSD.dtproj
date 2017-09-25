@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">SHISHIRS</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAASZ9oVoGp/0W42ZgwWblFmAAAAAACAAAAAAADZgAAwAAAABAAAADZUQIzrbPK0B9uDV+HZg1kAAAAAASAAACgAAAAEAAAAA2HXnWtBZ1ifdkplzBl10eIAAAAEZzNusaRAX7gcWgkCaw6yb72VAVaM3Z4GxxyyDgmSAVFxw/otfrHWThRCxD+e24QpeUh58lYlvX/K21KGgClwMuaOagv0UNj95W3bPKXgILBtW6I3fsQHq42Q+kYmv8Ln45FN6Tjc/vK+2jn1HuCb8mZpCPgYpOp7ivAYcLlPaAeaFU9YNBkwBQAAABeN8Ya6RoV4YPlTILo5V8j3wRunw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAASZ9oVoGp/0W42ZgwWblFmAAAAAACAAAAAAADZgAAwAAAABAAAAAjPSSiEphHZtgfgRlsIFdZAAAAAASAAACgAAAAEAAAAFJnWISNkLfzxLbaJPO6m5yIAAAARyq3r68M/j0RJ3gJf+N7tgXFljwJQYRTxwN1rg77qW60ez5JMjDvjFyQEELjk9FDtWkZ7jq0sGqsr8LBPOAGkokbcBUStF3qMAH892ioSG/UnVY9fO8nyT+Pbv5eZs4Jum4TgqJREfxcmYjYOr4ZwP7iNTudgYM9OLZbuC6j7tEO00mVbmrc6xQAAAAPTkM47NMSDwALnLQ90gwUnWPU1g==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -43,10 +43,10 @@
                 <SSIS:Property SSIS:Name="Name">ImportFromXML</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">3</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{CF16F96A-513C-485C-90B1-4A5244C0AC4F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{4111F604-EE80-4A82-BF3C-A8FF9AEB6FE1}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -149,10 +149,10 @@
                 <SSIS:Property SSIS:Name="Name">xmlTask</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">9</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">12</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{4883E252-6DFC-4EC5-BDF4-0DF22C2262CB}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{6FC067A0-E14B-4397-AB71-076B7F7A71B6}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
