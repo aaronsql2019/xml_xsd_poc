@@ -11,11 +11,51 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="xmlTask"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{64A546B9-4323-43FE-9A6D-BCD16BD7AC85}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{4883E252-6DFC-4EC5-BDF4-0DF22C2262CB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[31_607168.xml]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{7F47D260-8335-4457-A552-23EEF8954D35}"
+      DTS:ObjectName="31_607168.xml">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="D:\GIT\xml_xsd_poc\xml_task_input\31_607168.xml" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[32_599689.xml]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{73703D24-F26E-43B5-BD50-71F4B11E1B4E}"
+      DTS:ObjectName="32_599689.xml">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="D:\Edina\DataExtract\Not Processed\32_599689.xml" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[32_599689.xml 1]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{5B293ADC-70D7-40E9-BCD1-EDB39E8F1214}"
+      DTS:ObjectName="32_599689.xml 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="D:\GIT\xml_xsd_poc\xml_task_input\32_599689.xml" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[32_599689.xsd]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{C4478E41-BEA9-41E6-8C36-D9AEB22B9A49}"
+      DTS:ObjectName="32_599689.xsd">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="D:\GIT\xml_xsd_poc\xml_task_xsd\32_599689.xsd" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[books.xml]"
       DTS:CreationName="FILE"
@@ -47,6 +87,17 @@
           DTS:ConnectionString="D:\GIT\xml_xsd_poc\Output" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Report_Output.xml]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{42C82132-F4D2-4598-92A1-D098CB92128D}"
+      DTS:ObjectName="Report_Output.xml">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="D:\GIT\xml_xsd_poc\xml_task_ouput\Report_Output" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
@@ -64,11 +115,11 @@
       <DTS:ObjectData>
         <XMLTaskData
           OperationType="Validate"
-          Source="books.xml"
+          Source="31_607168.xml"
           SecondOperandType="FileConnection"
-          SecondOperand="catalog.xsd"
+          SecondOperand="32_599689.xsd"
           SaveOperationResult="True"
-          Destination="Output"
+          Destination="Report_Output.xml"
           OverwriteDestination="True"
           FailOpOnValidationFail="True"
           ValidationDetails="True" />

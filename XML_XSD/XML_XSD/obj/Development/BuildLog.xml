@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>XML_XSD</Name>
-    <LastWriteTime>2017-09-22T12:31:10.4288913Z</LastWriteTime>
+    <LastWriteTime>2017-09-25T06:57:03.6739473Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -13,7 +13,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>xmlTask.dtsx</Name>
-      <LastWriteTime>2017-09-22T12:31:10.0068827Z</LastWriteTime>
+      <LastWriteTime>2017-09-25T06:57:03.6539469Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="us.mn.state.mdor.ecrv.extract.form.EcrvForm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="headerForm">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="crvNumberId" type="xs:unsignedInt" />
+              <xs:element minOccurs="0" name="countyCde" type="xs:unsignedByte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="buyersForm">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="organizations">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="us.mn.state.mdor.ecrv.extract.form.StandardBuyerSellerForm">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="id" type="xs:unsignedByte" />
+                          <xs:element minOccurs="0" name="person" type="xs:boolean" />
+                          <xs:element minOccurs="0" name="addressLine1" type="xs:string" />
+                          <xs:element minOccurs="0" name="addressLine2" type="xs:string" />
+                          <xs:element minOccurs="0" name="organizationName" type="xs:string" />
+                          <xs:element minOccurs="0" name="city" type="xs:string" />
+                          <xs:element minOccurs="0" name="stateOrProvince" type="xs:string" />
+                          <xs:element minOccurs="0" name="zip" type="xs:unsignedShort" />
+                          <xs:element minOccurs="0" name="country" type="xs:string" />
+                          <xs:element minOccurs="0" name="email" />
+                          <xs:element minOccurs="0" name="daytimePhone" type="xs:unsignedLong" />
+                          <xs:element minOccurs="0" name="contactNotes" />
+                          <xs:element minOccurs="0" name="foreignAddress" type="xs:boolean" />
+                          <xs:element minOccurs="0" name="privateIndicator" type="xs:boolean" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="individuals" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="sellersForm">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="organizations">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="us.mn.state.mdor.ecrv.extract.form.StandardBuyerSellerForm">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="id" type="xs:unsignedByte" />
+                          <xs:element minOccurs="0" name="person" type="xs:boolean" />
+                          <xs:element minOccurs="0" name="addressLine1" type="xs:string" />
+                          <xs:element minOccurs="0" name="addressLine2" type="xs:string" />
+                          <xs:element minOccurs="0" name="organizationName" type="xs:string" />
+                          <xs:element minOccurs="0" name="city" type="xs:string" />
+                          <xs:element minOccurs="0" name="stateOrProvince" type="xs:string" />
+                          <xs:element minOccurs="0" name="zip" type="xs:unsignedShort" />
+                          <xs:element minOccurs="0" name="country" type="xs:string" />
+                          <xs:element minOccurs="0" name="email" />
+                          <xs:element minOccurs="0" name="daytimePhone" type="xs:unsignedLong" />
+                          <xs:element minOccurs="0" name="contactNotes" />
+                          <xs:element minOccurs="0" name="foreignAddress" type="xs:boolean" />
+                          <xs:element minOccurs="0" name="privateIndicator" type="xs:boolean" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="individuals" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="propertyForm">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="county" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="legalDescription" type="xs:string" />
+              <xs:element minOccurs="0" name="whatIsIncludedInSale" type="xs:string" />
+              <xs:element minOccurs="0" name="newBuildingsOnSaleYear" type="xs:boolean" />
+              <xs:element minOccurs="0" name="principalResidence" type="xs:boolean" />
+              <xs:element minOccurs="0" name="needsTimberDetails" type="xs:boolean" />
+              <xs:element minOccurs="0" name="needsApartmentDetails" type="xs:boolean" />
+              <xs:element minOccurs="0" name="needsAcreageDetails" type="xs:boolean" />
+              <xs:element minOccurs="0" name="displayMnPropertyAddress" type="xs:boolean" />
+              <xs:element minOccurs="0" name="displayParcel" type="xs:boolean" />
+              <xs:element minOccurs="0" name="mnPropertyAddresses">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="us.mn.state.mdor.ecrv.extract.form.PropertyAddressForm">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="id" type="xs:unsignedByte" />
+                          <xs:element minOccurs="0" name="street1" type="xs:string" />
+                          <xs:element minOccurs="0" name="street2" />
+                          <xs:element minOccurs="0" name="city" type="xs:unsignedByte" />
+                          <xs:element minOccurs="0" name="zip" type="xs:unsignedShort" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="plannedUses">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="us.mn.state.mdor.ecrv.extract.form.PlannedUseForm">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="id" type="xs:unsignedByte" />
+                          <xs:element minOccurs="0" name="tier1Cde" type="xs:string" />
+                          <xs:element minOccurs="0" name="tier2Cde" type="xs:string" />
+                          <xs:element minOccurs="0" name="primaryInd" type="xs:boolean" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="usesBeforeSale">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="us.mn.state.mdor.ecrv.extract.form.PlannedUseForm">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="id" type="xs:unsignedByte" />
+                          <xs:element minOccurs="0" name="tier1Cde" type="xs:string" />
+                          <xs:element minOccurs="0" name="tier2Cde" type="xs:string" />
+                          <xs:element minOccurs="0" name="primaryInd" type="xs:boolean" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="parcels">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="us.mn.state.mdor.ecrv.extract.form.ParcelForm">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="id" type="xs:unsignedByte" />
+                          <xs:element minOccurs="0" name="primary" type="xs:boolean" />
+                          <xs:element minOccurs="0" name="parcelId" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="propertyPrograms" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="salesAgreementForm">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="deedContractDate">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:date">
+                      <xs:attribute name="class" type="xs:string" use="optional" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="totPurchaseAmt" type="xs:decimal" />
+              <xs:element minOccurs="0" name="downPmtEquity" type="xs:decimal" />
+              <xs:element minOccurs="0" name="sellerPdPts" type="xs:decimal" />
+              <xs:element minOccurs="0" name="specialAssesmtAmt" type="xs:decimal" />
+              <xs:element minOccurs="0" name="financeType" type="xs:string" />
+              <xs:element minOccurs="0" name="personalPropertyIncludedInTotal" type="xs:boolean" />
+              <xs:element minOccurs="0" name="didBuyerLease" type="xs:boolean" />
+              <xs:element minOccurs="0" name="didSellerLease" type="xs:boolean" />
+              <xs:element minOccurs="0" name="sellerLeaseMonths" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="guaranteeRentIncome" type="xs:boolean" />
+              <xs:element minOccurs="0" name="deedPayoff" type="xs:boolean" />
+              <xs:element minOccurs="0" name="buyerPartInterest" type="xs:boolean" />
+              <xs:element minOccurs="0" name="receivedInTrade" type="xs:boolean" />
+              <xs:element minOccurs="0" name="likeKindExchange" type="xs:boolean" />
+              <xs:element minOccurs="0" name="agreement2YrsOld" type="xs:boolean" />
+              <xs:element minOccurs="0" name="financeArrangements" />
+              <xs:element minOccurs="0" name="personalProperties" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="supplementaryForm">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="relatedInd" type="xs:boolean" />
+              <xs:element minOccurs="0" name="taxExemptInd" type="xs:boolean" />
+              <xs:element minOccurs="0" name="governmentInd" type="xs:boolean" />
+              <xs:element minOccurs="0" name="nameChangeInd" type="xs:boolean" />
+              <xs:element minOccurs="0" name="legalActionInd" type="xs:boolean" />
+              <xs:element minOccurs="0" name="giftInd" type="xs:boolean" />
+              <xs:element minOccurs="0" name="buyerAppraisalInd" type="xs:boolean" />
+              <xs:element minOccurs="0" name="buyerAppraisalAmt" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="sellerAppraisalInd" type="xs:boolean" />
+              <xs:element minOccurs="0" name="sellerAppraisalAmt" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="adjacentPropertyInd" type="xs:boolean" />
+              <xs:element minOccurs="0" name="nonMarketPriceInd" type="xs:boolean" />
+              <xs:element minOccurs="0" name="nonMarketPriceComment" />
+              <xs:element minOccurs="0" name="nonListedInd" type="xs:boolean" />
+              <xs:element minOccurs="0" name="nonListedComment" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="submitterForm" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
