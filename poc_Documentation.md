@@ -3,6 +3,7 @@ Steps:
 + We will create a new SSIS project “XML_XSD”. After creating the project we will add a new Data Flow Task. 
 + Under the newly created Data Flow Task add XML Source from Other Source from SSIS Toolbox.
 + Double click XML Source and it will open the XML Source Editor.
+![alt text](https://github.com/shishirmax/xml_xsd_poc/blob/master/poc_image/xml_source_editor.jpg)
 + Under XMLLocation: Browse the XML file.
 + Under XSD Location either we can add our own XSD file or we can Generate the XSD file for validating the selected xml file.
 + This xsd file can be saved at local file location also.
