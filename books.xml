@@ -5,8 +5,8 @@
       <genre>Computer</genre>
       <price>44.95</price>
       <publish_date>2000-10-01</publish_date>
-      <description>An in-depth look at creating applications
-      with XML.</description>
+      <description123>An in-depth look at creating applications
+      with XML.</description123>
    </book>
    <book id="bk102">
       <author>Suzanne Collins </author>

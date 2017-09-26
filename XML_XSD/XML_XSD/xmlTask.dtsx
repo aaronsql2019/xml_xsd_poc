@@ -11,55 +11,15 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="xmlTask"
   DTS:PackageType="5"
-  DTS:VersionBuild="12"
-  DTS:VersionGUID="{6FC067A0-E14B-4397-AB71-076B7F7A71B6}">
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{1C3BD6A4-BA46-41B4-83E8-084A39927335}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[31_607168.xml]"
-      DTS:CreationName="FILE"
-      DTS:DTSID="{7F47D260-8335-4457-A552-23EEF8954D35}"
-      DTS:ObjectName="31_607168.xml">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="D:\GIT\xml_xsd_poc\xml_task_input\31_607168.xml" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[32_599689.xml]"
-      DTS:CreationName="FILE"
-      DTS:DTSID="{73703D24-F26E-43B5-BD50-71F4B11E1B4E}"
-      DTS:ObjectName="32_599689.xml">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="D:\Edina\DataExtract\Not Processed\32_599689.xml" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[32_599689.xml 1]"
-      DTS:CreationName="FILE"
-      DTS:DTSID="{5B293ADC-70D7-40E9-BCD1-EDB39E8F1214}"
-      DTS:ObjectName="32_599689.xml 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="D:\GIT\xml_xsd_poc\xml_task_input\32_599689.xml" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[32_599689.xsd]"
-      DTS:CreationName="FILE"
-      DTS:DTSID="{C4478E41-BEA9-41E6-8C36-D9AEB22B9A49}"
-      DTS:ObjectName="32_599689.xsd">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="D:\GIT\xml_xsd_poc\xml_task_xsd\32_599689.xsd" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[books.xml]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{0FEE8DA2-D1C4-4563-BC8C-26A8C46F5007}"
+      DTS:DTSID="{7BB51D40-DB6E-4459-8391-46952E6E90E6}"
       DTS:ObjectName="books.xml">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -69,7 +29,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[catalog.xsd]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{5ADD4C10-7F29-4FD2-ADC1-318D099B5A09}"
+      DTS:DTSID="{25895DCC-A731-4468-8167-3958938A1E05}"
       DTS:ObjectName="catalog.xsd">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -77,25 +37,14 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Output]"
+      DTS:refId="Package.ConnectionManagers[XmlTaskOutput.xml]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{2CAFCFA5-F59A-4995-B03C-CF178076965B}"
-      DTS:ObjectName="Output">
+      DTS:DTSID="{7E0BC728-C9DE-4BF9-918B-E2DA644BD8D9}"
+      DTS:ObjectName="XmlTaskOutput.xml">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:FileUsageType="1"
-          DTS:ConnectionString="D:\GIT\xml_xsd_poc\Output" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Report_Output.xml]"
-      DTS:CreationName="FILE"
-      DTS:DTSID="{42C82132-F4D2-4598-92A1-D098CB92128D}"
-      DTS:ObjectName="Report_Output.xml">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:FileUsageType="1"
-          DTS:ConnectionString="D:\GIT\xml_xsd_poc\xml_task_ouput\Report_Output" />
+          DTS:ConnectionString="D:\GIT\xml_xsd_poc\xml_task_ouput\XmlTaskOutput.xml" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -119,7 +68,7 @@
           SecondOperandType="FileConnection"
           SecondOperand="catalog.xsd"
           SaveOperationResult="True"
-          Destination="Report_Output.xml"
+          Destination="XmlTaskOutput.xml"
           OverwriteDestination="True"
           FailOpOnValidationFail="True"
           SaveDiffGram="True"
