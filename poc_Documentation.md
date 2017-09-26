@@ -1,4 +1,5 @@
-**Import from XML**
+#### Import from XML
+
 Steps:
 + We will create a new SSIS project “XML_XSD”. After creating the project we will add a new Data Flow Task. 
 + Under the newly created Data Flow Task add XML Source from Other Source from SSIS Toolbox.
@@ -24,7 +25,7 @@ Steps:
 + Map the success path from XML Source to OLE DB Destination 
 + Execute the package.
 
-XML Task
+#### XML Task
 Steps:
 + On same SSIS project create new SSIS package.
 + In SSIS ToolBox, under common we can find XML Task, Select XML Task from the list.
@@ -53,7 +54,7 @@ Steps:
 
 #### Output Report of XML Task
 
-When validated:
+**When validated:**
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <root xmlns:ns="http://schemas.microsoft.com/xmltools/2002/xmlvalidation">
@@ -69,7 +70,7 @@ When validated:
 	<messages />
 </root>
 ```
-When unable to validate the xml file:
+**When unable to validate the xml file:**
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <root xmlns:ns="http://schemas.microsoft.com/xmltools/2002/xmlvalidation">
