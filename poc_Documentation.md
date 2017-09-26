@@ -51,4 +51,39 @@ Steps:
 + ValidationDetails as True.
 6. Execute the package.
 
+#### Output Report of XML Task
 
+When validated:
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:ns="http://schemas.microsoft.com/xmltools/2002/xmlvalidation">
+	<metadata>
+		<result>true</result>
+		<errors>0</errors>
+		<warnings>0</warnings>
+		<startTime>2017-09-25T18:58:32.133</startTime>
+		<endTime>2017-09-25T18:58:32.223</endTime>
+		<xmlFile>D:\GIT\xml_xsd_poc\books.xml</xmlFile>
+		<xsdFile>D:\GIT\xml_xsd_poc\catalog.xsd</xsdFile>
+	</metadata>
+	<messages />
+</root>
+```
+When unable to validate the xml file:
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:ns="http://schemas.microsoft.com/xmltools/2002/xmlvalidation">
+	<metadata>
+		<result>false</result>
+		<errors>1</errors>
+		<warnings>0</warnings>
+		<startTime>2017-09-26T10:39:51.169</startTime>
+		<endTime>2017-09-26T10:39:51.259</endTime>
+		<xmlFile>D:\GIT\xml_xsd_poc\books.xml</xmlFile>
+		<xsdFile>D:\GIT\xml_xsd_poc\catalog.xsd</xsdFile>
+	</metadata>
+	<messages>
+		<error line="8" position="8">The element 'book' has invalid child element 'description123'. List of possible elements expected: 'description'.</error>
+	</messages>
+</root>
+```
